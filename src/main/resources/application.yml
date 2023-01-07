@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: userMS
+
+  datasource:
+    username: root
+    password: pass@word1
+    url: "jdbc:mysql://localhost:3306/user_db?useSSL=false&allowMultiQueries=true&serverTimezone=UTC"
+  #    driver-class-name: com.mysql.jdbc.driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+server:
+  port: 9091
